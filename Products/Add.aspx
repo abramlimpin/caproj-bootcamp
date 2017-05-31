@@ -57,7 +57,7 @@
                     </label>
                     <div class="col-lg-8">
                         <asp:TextBox ID="txtPrice" runat="server" CssClass="form-control" 
-                            type="number" min="1.00" max="100.00" step="0.01" required />
+                            type="number" min="1.00" max="1000000.00" step="0.01" required />
                     </div>
                 </div>
                 <div class="form-group">
@@ -81,7 +81,7 @@
                  <div class="form-group">
                     <div class="col-lg-offset-4 col-lg-8">
                         <asp:Button ID="btnAdd" runat="server" CssClass="btn btn-success"
-                            Text="Add" />
+                            Text="Add" OnClick="btnAdd_Click" />
                     </div>
                 </div>
             </form>
